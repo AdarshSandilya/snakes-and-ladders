@@ -1,19 +1,20 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Board {
 
     private final int size;
     private ArrayList<Snake> snakes;
     private ArrayList<Ladder> ladder;
-    private ArrayList<Player> players;
+    private LinkedList<Player> players;
 
     public Board(int size) {
         this.size = size;
         this.snakes = new ArrayList<Snake>();
         ladder = new ArrayList<Ladder>();
-        this.players = new ArrayList<Player>();
+        this.players = new LinkedList<Player>();
     }
 
 
@@ -33,11 +34,11 @@ public class Board {
         this.ladder = ladder;
     }
 
-    public ArrayList<Player> getPlayers() {
+    public LinkedList<Player> getPlayers() {
         return players;
     }
 
-    public void setPlayers(ArrayList<Player> players) {
+    public void setPlayers(LinkedList<Player> players) {
         this.players = players;
     }
 }

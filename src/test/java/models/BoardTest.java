@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -28,7 +29,7 @@ public class BoardTest {
 
     @Test
     public void getPlayers_should_return_all_players_on_the_board() {
-        final ArrayList<Player> players = new ArrayList<>();
+        final LinkedList<Player> players = new LinkedList<>();
         players.add(new Player("some-name"));
         board.setPlayers(players);
 
