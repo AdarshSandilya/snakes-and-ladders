@@ -15,4 +15,12 @@ public class SnakeTest {
         new Snake(2, 1);
     }
 
+    @Test
+    public void getStartPosition_should_return_start_position_of_the_snake() {
+        int startPosition = 2;
+        int endPosition = 1;
+        Snake snake = new Snake(startPosition, endPosition);
+        
+//        assertThat()
+    }
 }

@@ -1,6 +1,6 @@
 package models;
 
-public class Snake {
+public class Snake extends SpotType{
 
     private final int startPosition;
     private final int endPosition;
@@ -10,5 +10,13 @@ public class Snake {
             throw new IllegalArgumentException("start position should be greater than end position");
         this.startPosition = startPosition;
         this.endPosition = endPosition;
+    }
+
+    public int getStartPosition() {
+        return startPosition;
+    }
+
+    public int getEndPosition() {
+        return endPosition;
     }
 }
