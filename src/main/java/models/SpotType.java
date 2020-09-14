@@ -1,5 +1,5 @@
 package models;
 
-public class SpotType {
-    
+public interface SpotType {
+    int getEndPosition();
 }

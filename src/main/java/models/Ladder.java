@@ -1,6 +1,6 @@
 package models;
 
-public class Ladder extends SpotType{
+public class Ladder implements SpotType {
     private final int startPosition;
     private final int endPosition;
 
@@ -11,5 +11,10 @@ public class Ladder extends SpotType{
 
     public int getStartPosition() {
         return startPosition;
+    }
+
+    @Override
+    public int getEndPosition() {
+        return endPosition;
     }
 }

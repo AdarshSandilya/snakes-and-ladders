@@ -1,6 +1,6 @@
 package models;
 
-public class Snake extends SpotType{
+public class Snake implements SpotType {
 
     private final int startPosition;
     private final int endPosition;
@@ -16,6 +16,7 @@ public class Snake extends SpotType{
         return startPosition;
     }
 
+    @Override
     public int getEndPosition() {
         return endPosition;
     }
