@@ -16,8 +16,9 @@ public class PlayerTest {
 
     @Test
     public void should_return_current_position_of_player() {
-        player.setPosition(1);
+        Spot spot = new Spot(1, new NormalSpot(0));
+        player.setPosition(spot);
         
-        assertEquals(1, player.getPosition());
+        assertEquals(spot, player.getPosition());
     }
 }

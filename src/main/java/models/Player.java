@@ -1,19 +1,19 @@
 package models;
 
 public class Player {
-    private int position;
+    private Spot position;
     private String name;
 
     public Player(String name) {
         this.name = name;
-        this.position = 0;
+        this.position = new Spot(0, new NormalSpot(0));
     }
 
-    public int getPosition() {
+    public Spot getPosition() {
         return position;
     }
 
-    public void setPosition(int position) {
+    public void setPosition(Spot position) {
         this.position = position;
     }
 }

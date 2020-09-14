@@ -11,7 +11,7 @@ public class NormalDiceTest {
         int min =1;
         int max =6;
 
-        int resultedNumber = NormalDice.roll();
+        int resultedNumber = new NormalDice().roll();
         assertTrue(min <= resultedNumber && resultedNumber <= max);
     }
 }

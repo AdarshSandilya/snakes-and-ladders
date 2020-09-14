@@ -32,7 +32,7 @@ public class Board {
                 spots.add(new Spot(i, ladderAtPosition));
                 continue;
             }
-            spots.add(new Spot(i, new SpotType()));
+            spots.add(new Spot(i, new NormalSpot(i)));
         }
     }
 
@@ -52,5 +52,8 @@ public class Board {
     public void setPlayers(LinkedList<Player> players) {
         this.players = players;
     }
-    
+
+    public Spot getSpotAt(int position) {
+        return spots.get(position);
+    }
 }

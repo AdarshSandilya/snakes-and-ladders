@@ -11,7 +11,7 @@ public class CrookedDiceTest {
         int min =1;
         int max =6;
 
-        int resultedNumber = CrookedDice.roll();
+        int resultedNumber = new CrookedDice().roll();
         assertTrue(resultedNumber %2==0 &&  resultedNumber<=max && resultedNumber >min );
     }
 
